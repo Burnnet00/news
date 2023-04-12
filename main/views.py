@@ -2,7 +2,10 @@ from django.shortcuts import render
 
 
 def index(reguest):
-    return render(reguest, 'main/index.html')
+    data = {
+        'title': 'Главная страничка'
+    }
+    return render(reguest, 'main/index.html', data)
 
 
 def about(reguest):
