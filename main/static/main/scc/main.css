@@ -36,6 +36,13 @@ aside ul li:hover, aside ul a:hover{
     text-decoration: none;
     transform: scale(1.05);
  }
+.alert-warning{
+    float: left;
+    clear: both;
+    width: 400px;
+    margin: 20px 34%;
+    text-align: left;
+}
 main .features {
     float: left;
     color: #fff;
@@ -45,6 +52,9 @@ main .features {
 }
 main .features h1 {font-size: 50px;}
 main .features p {max-width: 400px; margin:20px auto}
-main .features
-}
+
+form {
+    margin-left: 32%;
+    width: 500px;
+    margin-top: 50px;
 }
