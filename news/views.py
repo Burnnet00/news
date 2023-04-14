@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.views.generic import DetailView
+from django.views.generic import DetailView, UpdateView, DeleteView
 
 from .forms import ArtilesForm
 from .models import Artiles
@@ -12,6 +12,17 @@ class NewsDetailView(DetailView):
     model = Artiles
     template_name = 'news/detail_view.html'
     context_object_name = 'article'
+
+class NewsUpdateView(UpdateView):
+    model = Artiles
+    template_name = 'news/create.html'
+    form_class = ArtilesForm
+    #fields = ['title','anons','ful_text', 'date']
+
+class NewsDeleteView(DeleteView):
+    model = Artiles
+    success_url = '/news'
+    template_name = 'news/news_delete.html'
 
 def create(request):
     error = ''
