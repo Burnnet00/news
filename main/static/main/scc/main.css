@@ -3,6 +3,10 @@ body {
 }
 aside{
     float: left;
+    /*position: fixed; /* изменяем позиционирование */
+    position: -webkit-sticky; /* для Safari и iOS */
+    position: sticky;
+    top: 0; /* прикрепляем к верху экрана */
     background: #181818;
     width: 22%;
     padding: 2.5%;
